@@ -9,7 +9,7 @@
 		height:20em;
 	}
 	body{
-		background-image: url("http://127.0.0.1:8000/Tris/static/images/text_input.jpg");
+		background-image: url("/Tris/static/images/text_input.jpg");
 	}
 
 </style>
@@ -34,7 +34,7 @@
 		};
 		title= document.getElementById('title').value;
 		content= document.getElementById('bab').value;
-		httpRequest.open('GET', 'http://127.0.0.1:8000/Tris/default/voicedb?head='+title+'&text='+content, true);
+		httpRequest.open('GET', '/Tris/default/voicedb?head='+title+'&text='+content, true);
 		httpRequest.send();
 	}
     function fun(){

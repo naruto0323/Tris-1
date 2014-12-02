@@ -80,7 +80,7 @@
     position: absolute;
     top:2.8em;
     left:-1.49em;
-    background-image: url('http://127.0.0.1:8000/Tris/static/images/background.png');
+    background-image: url('/Tris/static/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -166,7 +166,7 @@
    All JavaScript at the bottom, except for Modernizr which enables
        HTML5 elements & feature detects -->
   <script src="{{=URL('static','js/modernizr.custom.js')}}"></script>
-  <link rel="shortcut icon" type="image/png" href="http://127.0.0.1:8000/Tris/static/images/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/Tris/static/images/favicon.png">
 
   <!-- include stylesheets -->
   {{
@@ -208,7 +208,7 @@
         </button>
         <ul id="navbar" class="nav pull-right">{{='auth' in globals() and auth.navbar(mode="dropdown") or ''}}</ul>
         <div class="{{='nav-collapse' if is_mobile else 'nav'}}">
-          <a href="http://127.0.0.1:8000/Tris/default/login_home" class="home_hover"><div id="home_nav">Home</div></a>
+          <a href="/Tris/default/login_home" class="home_hover"><div id="home_nav">Home</div></a>
           <div id="bckimg"></div>
         </div><!--/.nav-collapse -->
       </div>
@@ -227,7 +227,7 @@
 	{{pass}}
     </header>
     <br><br><br><br>
-    <a href="http://127.0.0.1:8000/Tris/default/view">
+    <a href="/Tris/default/view">
     <div id = "view_uploads" onmouseover="mousein()" onmouseout="mouseout()">
       <h2 id = "view_uploadsh2">View Uploads</h2>
     </div>
@@ -240,13 +240,13 @@
     <div id="first">
     </div>
     <div id="options">
-      <a href="http://127.0.0.1:8000/Tris/default/voice_upload"><img class="opt-pics" src="http://127.0.0.1:8000/Tris/static/images/microphone.png"></a>
-    <a id="1">  <a href="http://127.0.0.1:8000/Tris/default/upload_file"><img class="opt-pics" src="http://127.0.0.1:8000/Tris/static/images/upload.png"></a>
-      <a href="http://127.0.0.1:8000/Tris/default/text"><img class="opt-pics" src="http://127.0.0.1:8000/Tris/static/images/key.png"></a>
+      <a href="/Tris/default/voice_upload"><img class="opt-pics" src="/Tris/static/images/microphone.png"></a>
+    <a id="1">  <a href="/Tris/default/upload_file"><img class="opt-pics" src="/Tris/static/images/upload.png"></a>
+      <a href="/Tris/default/text"><img class="opt-pics" src="/Tris/static/images/key.png"></a>
     </div>
   </a>
     <div id="test">
-          <img src="http://127.0.0.1:8000/Tris/static/images/laptop.jpg" id="laptop">
+          <img src="/Tris/static/images/laptop.jpg" id="laptop">
           <iframe id="video" src="//www.youtube.com/embed/AEl4CqfOP_Q" frameborder="0" allowfullscreen></iframe>
     </div>
     

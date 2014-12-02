@@ -34,7 +34,7 @@
 
   <!--<link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
   <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">-->
- <link rel="shortcut icon" type="image/png" href="http://127.0.0.1:8000/Tris/static/images/favicon.png">
+ <link rel="shortcut icon" type="image/png" href="/Tris/static/images/favicon.png">
   <!-- All JavaScript at the bottom, except for Modernizr which enables
        HTML5 elements & feature detects -->
   <script src="{{=URL('static','js/modernizr.custom.js')}}"></script>
@@ -122,7 +122,7 @@
         </button>
         <ul id="navbar" class="nav pull-right">{{='auth' in globals() and auth.navbar(mode="dropdown") or ''}}</ul>
         <div class="{{='nav-collapse' if is_mobile else 'nav'}}">
-          <a href="http://127.0.0.1:8000/Tris/default/index" class="home_hover"><div id="home_nav">Home</div></a>
+          <a href="/Tris/default/index" class="home_hover"><div id="home_nav">Home</div></a>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -134,7 +134,7 @@
         </div>
     </header>
     <div id="border_login">
-      <img src="http://127.0.0.1:8000/Tris/static/images/login_pic.png" id="login_pic" />
+      <img src="/Tris/static/images/login_pic.png" id="login_pic" />
       <br>
       <br>
     <!--  <div id="dummy"></div>-->
